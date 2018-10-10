@@ -1,0 +1,27 @@
+/*
+ $max-width: 960px;
+ $break-point: 768px;
+ $white: #fff;
+ $gray: #eee;
+ $dark-gray: #cecece;
+ $font-large: 20px;
+ $font-default: 16px;
+ $font-small: 14px;
+*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	line-height: 1.5;
+}
+
+img {
+	vertical-align: bottom;
+}
+
+ul {
+	list-style: none;
+}

@@ -1,0 +1,136 @@
+/*
+ $max-width: 960px;
+ $break-point: 768px;
+ $white: #fff;
+ $gray: #eee;
+ $dark-gray: #cecece;
+ $font-large: 20px;
+ $font-default: 16px;
+ $font-small: 14px;
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    line-height: 1.5;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+ul {
+    list-style: none;
+}
+
+.panel {
+    background-color: #fff;
+    border: solid 1px #cecece;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.panel--highlight {
+    border: solid 2px #3176d5;
+}
+
+.panel__content {
+    margin-bottom: 20px;
+}
+
+.panel__content__icon {
+    text-align: center;
+    margin-bottom: 10px
+}
+
+.panel__content__icon > img {
+    width: 80px;
+}
+
+.panel__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.panel__text {
+    font-size: 16px;
+}
+
+.panel__footer {
+    font-size: 14px;
+}
+
+@media all and (max-width: 767px) {
+  .panel__content {
+      display: flex;
+  }
+  .panel__content__icon {
+      text-align: right;
+      flex: 0 0 auto;
+  }
+  .panel__content__icon > img {
+      width: 60px;
+  }
+  .panel__content__item {
+      flex: 1 1 auto;
+      margin-left: 15px;
+  }
+
+  .panel__title {
+      text-align: left;
+      margin-bottom: 10px;
+  }
+}
+
+.belt {
+    min-width: 960px;
+    background-color: #eee;
+}
+
+.belt__content {
+    width: 960px;
+    padding: 30px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media all and (max-width: 767px) {
+    .belt {
+        min-width: 100%;
+    }
+
+    .belt__content {
+        width: 100%;
+        padding: 30px 15px;
+    }
+}
+
+.panels {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -20px;
+}
+
+.panels__item {
+    flex: 0 0 calc(33.3% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+@media all and (max-width: 767px) {
+    .panels {
+        display: block;
+    }
+
+    .panels__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
